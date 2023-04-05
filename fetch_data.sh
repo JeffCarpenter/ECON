@@ -5,10 +5,9 @@ mkdir -p data/smpl_related/models
 
 # username and password input
 echo -e "\nYou need to register at https://icon.is.tue.mpg.de/, according to Installation Instruction."
-read -p "Username (ICON):" username
-read -p "Password (ICON):" password
-username=$(urle $username)
-password=$(urle $password)
+echo 'and set $ICON_USER and $ICON_PASS'
+username=$(urle $ICON_USER)
+password=$(urle $ICON_PAS)
 
 # SMPL (Male, Female)
 echo -e "\nDownloading SMPL..."
